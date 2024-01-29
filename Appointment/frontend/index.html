@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+</head>
+<body>
+    
+   
+    
+        <h2 style="text-align: center;color: #fc9d03;">Book a Call</h2>
+        <p style="text-align: center;font-size: 12px;" >Book a call slot and our representative will call you within 1hr of selected time</p>
+        <hr>
+
+    <form class="form" method="POST" action="/">
+        <label for="name">Name:</label><br>
+        <input class="input" type="text" id="name" name="name"><br>
+        
+        <label for="email">Email:</label><br>
+        <input class="input" type="text" id="email" name="email"><br>
+
+        <label for="phone">Phone:</label><br>
+        <input class="input" type="number" id="phone" maxlength="10" name="name"><br>
+
+        <label for="time">Time for call:</label><br>
+         <div class="time">
+          <input style="width: 48%;" type="date" value="22/11/2020" id="date" name="date">
+            <select style="width: 48%;margin-left: 6%;" id="time" name="time">
+             <option value ="11:00">11:00</option>
+             <option value ="12:00">12:00</option>
+             <option value ="13:00">13:00</option>
+             <option value ="14:00">14:00</option>
+            </select>
+         </div>
+     
+        <input type="submit" id ="submit" value="submit">
+    
+    </form>
+    <ul class ="usersList"></ul>
+    <script src = "./test(crud).js"></script>
+    
+</body>
+<style>
+    .form{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin: 6%;
+        width: 50%;
+        justify-content: center;
+       
+        border:solid;
+        border-color:#fc9d03 ;
+        border-radius: 2%;
+        padding: 1%;
+    }
+    body{
+        display: flex;
+    justify-content: center;
+    background-image:url("./bg.jpg");
+    background-size: cover;
+    flex-direction: column;
+ 
+    }
+    .input{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    .time{
+        display: flex;
+        flex-direction: row;
+         justify-content:flex-start;
+      
+    }
+    .button{
+        align-self: center;
+        }
+
+        form{
+            width: 95%;
+        }
+</style>
+
+
+
+</html>
